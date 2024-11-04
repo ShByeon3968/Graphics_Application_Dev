@@ -4,6 +4,7 @@
 #include "Shader.h"
 #include <stb/stb_image.h>
 #include "Utils.h"
+#include <glm-master/glm/glm.hpp>
 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -102,7 +103,7 @@ int main()
 
     //load Image, create texture and generate mipmaps
     int width, height, nrChannels;
-    unsigned char* data = stbi_load(FileSystem::getPath("C:/bsh/Cpp/GraphicPrac/Resource/container.jpg"), &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load(FileSystem::getPath("C:/bsh/GraphicsPrac/Resource/container.jpg"), &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
@@ -122,7 +123,7 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     stbi_set_flip_vertically_on_load(true);
-    data = stbi_load(FileSystem::getPath("C:/bsh/Cpp/GraphicPrac/Resource/awesomeface.png"), &width, &height, &nrChannels, 0);
+    data = stbi_load(FileSystem::getPath("C:/bsh/GraphicsPrac/Resource/awesomeface.png"), &width, &height, &nrChannels, 0);
     if (data)
     {
         // note that the awesomeface.png has transparency and thus an alpha channel, so make sure to tell OpenGL the data type is of GL_RGBA

@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\bsh\Cpp\GraphicPrac\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\bsh\Cpp\GraphicPrac\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\bsh\GraphicsPrac\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\bsh\GraphicsPrac\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\bsh\Cpp\GraphicPrac\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\bsh\Cpp\GraphicPrac\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\bsh\GraphicsPrac\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\bsh\GraphicsPrac\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -84,6 +84,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\bsh\GraphicsPrac\Libraries\include\glm-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,6 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\bsh\GraphicsPrac\Libraries\include\glm-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
