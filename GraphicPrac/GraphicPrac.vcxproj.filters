@@ -27,6 +27,9 @@
     <ClCompile Include="stb.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="VerticeInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="vertex.vs">
@@ -44,6 +47,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="..\Libraries\include\stb-master\stb_image.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticeInfo.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

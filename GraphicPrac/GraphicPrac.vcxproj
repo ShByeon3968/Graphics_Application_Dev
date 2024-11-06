@@ -143,6 +143,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="stb.cpp" />
+    <ClCompile Include="VerticeInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fragment.frag" />
@@ -152,6 +153,7 @@
     <ClInclude Include="..\Libraries\include\stb-master\stb_image.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="VerticeInfo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
